@@ -1,35 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# YT Live Ctrl
 
-## Getting Started
+This is a simple NextJS PWA based App to manage Youtube Live Streams. The initial version focusses on Start, Stop of the Live Stream.
 
-First, run the development server:
+## Tech Stack
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+### Front End
+- NextJS
+- Tailwind
+- next-pwa
+- OneSignal SDK (Web Push Notifications)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+###  Backend
+- Lambda API - Eventually
+- Initially Use the Google Apps Script to Build the Prototype. Later Switch to Custom API's
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### Hosting
+- Can be Hosted on Vercel Initially.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Screens
 
-## Learn More
+Authentication
+- SignIn using Google
 
-To learn more about Next.js, take a look at the following resources:
+Channels List
+- List all channels you have access to
+- Group Channels by Name
+- Link a New Channel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Channel Detail Page
+- Show List of Live Streams
+- Option to Filter Upcoming, Ongoing, Ended
+- Summary of the Status
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Page files
 
-## Deploy on Vercel
+- I am building this using Creative Tim's NOTUS UI Template
+- Is there anything which will be better than this to learn, understand and develop using tailwind ?
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+List of Items
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# yt-live-ctrl
+- [] Login Page
+- [] YT Control Home
+- [] Bottom Navigation
+- [] Channel Home
+    - [] Group By Category
+    - [] Channel Listing - Image/Preview, Title
+    - [] Link a New Channel
+    - [] Channel Info 
+        - [] Live Streams
+        - [] Upcoming, Ongoing, Testing and Ended
+- [] Activity Home
+    - List of Actions Performed
+    - Linked Actions
+- [] Settings
+    - Push Notifications - ON/OFF
+
+
+
+
